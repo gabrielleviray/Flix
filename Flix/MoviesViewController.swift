@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -15,6 +16,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     // PROPERTIES: available for the lifetime of screen
     var movies_data = [[String:Any]]() // create array of dictionaries
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,13 +56,29 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     // Called 50 times
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
         
         let movie_data = movies_data[indexPath.row] // Store movies
         let movie_title = movie_data["title"] as! String // Need to cast
         
+        let synopsis = movie_data["overview"] as! String
+
+        cell.titleLabel.text = movie_title
+        cell.synopsisLabel.text = synopsis
         
-        cell.textLabel!.text = movie_title
+        let base_url = "http://image.tmdb.org/t/p/w185"
+        
+        if let poster_path = movie_data["poster_path"] as? String {
+            let poster_url = URL(string: base_url + poster_path)
+            cell.posterView.af_setImage(withURL: poster_url!)
+        }
+        else {
+            cell.posterView.image = nil
+        }
+        
+        
+        
+        
         
         return cell
     }
