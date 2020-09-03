@@ -9,7 +9,6 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 ## Flix Part 1
 
 ### User Stories
-`TODO://` In the **User Stories section below**, add an `x` in the `-[ ]` like this `- [x]` for any user story you complete. (🚫 Remove this paragraph after after checking off completed user stories)
 
 #### REQUIRED (10pts)
 - [x] (2pts) User sees an app icon on the home screen and a styled launch screen.
@@ -24,4 +23,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 <img src=http://g.recordit.co/MPzyomxY1A.gif width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
+Developing Flix took about 2 - 3 hours. I learned about how to use web-based APIs to access movie data from the website and use the data in the Flix application.
+Using JSONView Chrome Extension made reading the movie data from the API way easier. Overall, the process of learning how to style launch screens,
+setting up a table view, and creating custom cells was enjoyable. What slowed me down the mostduring the process was my navigating around Xcode since I'm fairly new working with the environment.
+
