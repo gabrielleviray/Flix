@@ -67,7 +67,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         cell.synopsisLabel.text = synopsis
         
         let base_url = "http://image.tmdb.org/t/p/w185"
-        
         if let poster_path = movie_data["poster_path"] as? String {
             let poster_url = URL(string: base_url + poster_path)
             cell.posterView.af_setImage(withURL: poster_url!)
@@ -76,13 +75,32 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             cell.posterView.image = nil
         }
         
-        
-        
-        
-        
         return cell
     }
 
+    // ###################################
+    // #                                 #
+    // #           Navigation            #
+    // #                                 #
+    // ###################################
+    //
+    // Preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?) {
+        // Get the new view controller using segue.destination
+        // Pass the selected object to the new view controller.
+        print("Loading up the details screen.")
+        
+        // Find the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for:cell)!
+        let movie_data = movies_data[indexPath.row]
+        
+        // Pass the selected movie to the details view controller
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie_details = movie_data
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 
 }
 
