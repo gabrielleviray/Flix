@@ -16,11 +16,11 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
 ### App Walkthrough GIF
-<img src=http://g.recordit.co/DG7ltSFJLO.gif width=250><br>
+<img src=http://g.recordit.co/DG7ltSFJLO.gif width=250>
 <img src =http://g.recordit.co/beCM3J0mox.gif width=250><br>
 
 ### Notes
-Learned about implementing collection view and utilizing wkwebview to view webpages such as youtube to show trailers for movies.
+Added more features such as navigation tab bar for Superhero movies and viewing deatils of each movie. I learned about implementing collection view and utilizing wkwebview to view webpages from youtube to show trailers for movies.
 ---
 
 ## Flix Part 1
@@ -37,8 +37,8 @@ Learned about implementing collection view and utilizing wkwebview to view webpa
 - [x] (1pt) Run your app on a real device.
 
 ### App Walkthrough GIF
-<img src=http://g.recordit.co/MPzyomxY1A.gif width=250><br>
-<img src=http://g.recordit.co/VmgH5QuWSf.gif><br>
+<img src=http://g.recordit.co/MPzyomxY1A.gif width=250>
+<img src=http://g.recordit.co/VmgH5QuWSf.gif>
 <img src=http://g.recordit.co/7dHKIuXOrq.gif><b>
 
 ### Notes
