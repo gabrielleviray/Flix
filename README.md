@@ -12,14 +12,15 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] (5pts) User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
 
 #### BONUS
-- [ ] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
-- [ ] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
+- [x] (2pts) User can tap a poster in the collection view to see a detail screen of that movie.
+- [x] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
 ### App Walkthrough GIF
 <img src=http://g.recordit.co/DG7ltSFJLO.gif width=250><br>
+<img src =http://g.recordit.co/beCM3J0mox.gif width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
+Learned about implementing collection view and utilizing wkwebview to view webpages such as youtube to show trailers for movies.
 ---
 
 ## Flix Part 1
@@ -41,5 +42,5 @@ Describe any challenges encountered while building the app.
 <img src=http://g.recordit.co/7dHKIuXOrq.gif><b>
 
 ### Notes
-Developing Flix took about 2 - 3 hours. I learned about how to use web-based APIs to access movie data from the website and use the data in the Flix application. Using JSONView Chrome Extension made reading the movie data from the API way easier. Overall, the process of learning how to style launch screens, setting up a table view, and creating custom cells was enjoyable. What slowed me down the mostduring the process was my navigating around Xcode since I'm fairly new working with the environment.
+Developing Flix took about 2 - 3 hours. I learned about how to use web-based APIs to access movie data from the website and use the data in the Flix application. Using JSONView Chrome Extension made reading the movie data from the API way easier. Overall, the process of learning how to style launch screens, setting up a table view, and creating custom cells was enjoyable. What slowed me down the most during the process was navigating around Xcode since I'm fairly new working with the environment.
 
